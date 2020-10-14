@@ -12,8 +12,7 @@ const fetcher = async (url) => {
 
 export default function Home() {
 
-    const url = 'https://drf-snacks-api.herokuapp.com/api/v1/snacks/';
-    // const url = 'https://more-snacks.herokuapp.com/api/v1/snacks';
+    const url = 'https://more-snacks.herokuapp.com/api/v1/snacks';
 
     const { data, error } = useSWR((url), fetcher)
 
